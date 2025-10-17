@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+
+.header__navigation {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    color: white;
+    height: 4.3rem;
+    padding: 1rem;
+    background-color: rgba(13, 13, 13, 0.8);
+    width: 100%;
+    z-index: 999;
+    position: fixed;
+
+}
+
+.nav__title {
+    text-decoration: none;
+    background: linear-gradient(to right, #00cfff, #c23eff);
+    -webkit-backgound-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    text-shadow: 0 0 25px #c23eff;
+}
+
+
+.menu a {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+.join__tournaments a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    border-radius: 30rem;
+    -webkit-backgound-clip: text;
+    background-clip: text;
+    background: linear-gradient(to left, #00cfff, #c23eff);
+    padding: 0.5rem;
+}
+
+.hero__section__continue {
+    z-index: 999;
+}
+
+.main__title {
+    font-size: 6.4rem;
+}
+
+.main__paragraph {
+    font-size: 2rem;
+}
+
+.hero__section {
+    background-image: url(https://imgs.search.brave.com/5JuP4rDmDF3zPgPGr19qV7AbMoOR6aLop7BVkivXgz4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2EwLzE3NTJfSmFt/ZXNfQXlzY291Z2hf/QV9zaG9ydF9hY2Nv/dW50X29mX3RoZV9F/eWVfYW5kX25hdHVy/ZV9vZl92aXNpb25f/cDMwLmpwZw);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.tournaments__hero__section {
+    background-image: url(../assets/images/tournament.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    background-repeat: no-repeat;
+}
+
+.teams__hero__section {
+    background-image: url(../assets/images/teams.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
+    background-repeat: no-repeat;
+}
+
+.hero__section::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(13, 13, 13, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+}
+
+.button {
+    padding: 2.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.button__trophy {
+    border-radius: 3.5rem;
+    background: linear-gradient(to left, #00cfff, #c23eff);
+}
+
+.whatch__button {
+    border-radius: 3.5rem;
+    background: linear-gradient(to right, #00cfff, #c23eff);
+    padding: 1rem;
+}
+
+.footer__section {
+    flex-direction: column;
+}
+
+.first__part__footer {
+    display: flex;
+    padding: 2rem;
+    text-align: left;
+    justify-content: space-around;
+}
+
+.platform__title {
+    color: white;
+    padding: 0 0 20px;
+    font-size: 20px;
+}
+
+.platform__div a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: #fff9;
+    transition: 500ms;
+    display: inline-block;
+}
+
+.platform__div a:hover {
+    color: #00cfff;
+    transform: scale(1.1);
+}
+
+.footer__paragraph {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.row1 {
+    display: flex;
+    padding: 3rem;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+.row1 p {
+    width: 450px;
+    text-align: left;
+    color: #fff9;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+
+}
+
+.information__title {
+    font-size: large;
+    color: #797575;
+}
+
+.information__detail {
+    font-size: large;
+    text-decoration: none;
+    color: #9f9a98;
+}
+
+.copyrghit__div {
+    display: flex;
+    margin: 1.2rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.copyrghit__div p {
+    font-size: large;
+}
+
+.copyrghit__div div a {
+    font-size: large;
+}
+
+.section_cards {
+    padding: 30px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    border-radius: 10%;
+    position: relative;
+}
+
+.gradient {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 207, 255, 0.4), transparent 60%);
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease;
+    z-index: 999;
+}
+
+.hero__section__title {
+    text-decoration: none;
+    background: linear-gradient(to right, #00cfff, #c23eff);
+    -webkit-backgound-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4.5rem;
+    text-shadow: 0 0 25px #c23eff;
+}
+
+.card:hover .gradient {
+    width: 450px;
+    height: 450px;
+    opacity: 0.4;
+}
+
+.card div p {
+    text-align: center;
+}
+
+.card div h4 {
+    text-align: center;
+}
+
+.card img {
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 300px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+.card__information__style {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+
+.games-section {
+    padding: 60px 20px;
+    background: #0f0f1a;
+    color: #fff;
+    text-align: center;
+}
+
+.games-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background: #1a1a27;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+.game-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.game-content {
+    padding: 20px;
+}
+
+.game-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #00c4ff;
+}
+
+.game-content p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #ccc;
+}
+
+.game-logo {
+    width: 60px;
+    height: 60px;
+    margin: 15px auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #00c4ff;
+}
+
+.game-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
